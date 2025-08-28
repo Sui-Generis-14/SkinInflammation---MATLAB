@@ -1,8 +1,8 @@
-# Skin Inflammation Detection
+## Skin Inflammation Detection
 
 A MATLAB project that detects and highlights inflamed (red) skin regions from a normal photo and reports metrics you can track over time. Built to be fast, explainable, and training-free (no deep learning needed).
 
-# What It Does
+## What It Does
 
 1. Takes a skin photo (JPG/PNG).
 2. Cleans the image (neutral color, reduced glare, even lighting).
@@ -19,17 +19,17 @@ A MATLAB project that detects and highlights inflamed (red) skin regions from a 
    - JSON + CSV with metrics (e.g., percent inflamed).
 
 
-# Getting Started
-## 1) Set Up
+## Getting Started
+### 1) Set Up
 
 - Use MATLAB Online (recommended) or Desktop MATLAB.
 
 - Ensure Image Processing Toolbox is available.
 
-## 2) Project Layout
+### 2) Project Layout
 
 Put this folder in your MATLAB Drive or local MATLAB path:
-
+```bash
         skin_inflammation/
         ├── data/                   # Input images (put your JPG/PNG here)
         ├── out/                    # Auto-created: results are saved here
@@ -46,17 +46,18 @@ Put this folder in your MATLAB Drive or local MATLAB path:
             ├── visualizeResults.m
             ├── saveReport.m
             └── utils.m
+```
 
-## 3) Run
+### 3) Run
 
 - Put an image in data/ (e.g., sample1.jpg).
 
 - In MATLAB Command Window:
-
+```bash
         clear; clc; main               % process the sample image set in projectConfig.m
         % or process a whole folder:
         batchProcess('data')
-
+```
 ## Outputs
 
 Saved in out/ with timestamps:
